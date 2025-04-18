@@ -1,0 +1,92 @@
+
+.card {
+    max-width: 65%;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+
+
+    .container {
+        width: 230px;
+        height: 290px;
+        box-sizing: border-box;
+        box-shadow: 0 17px 34px 0 rgba(44,39,56,0.04),0 8px 17px 0 rgba(44,39,56,0.02);
+        cursor: pointer;
+
+    
+    
+        .cardHeader {
+    
+            .img {
+                img {
+                    width: 230px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 10px 10px 0 0;
+                }
+            }
+    
+            .icon {
+                position: relative;
+                bottom: 140px;
+                left: 185px;
+                display: inline;
+                cursor: pointer;
+
+
+                svg {
+                    width: 25px;
+                    height: 25px;
+                    color: white;
+
+                }
+    
+            }
+        }
+    
+        .cardMain {
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+            padding: 0 10px;
+
+            .price {
+                font-size: 25px;
+                font-weight: 600;
+            }
+
+            .modelBrand {
+                display: flex;
+                gap: 5px;
+
+                p {
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+            }
+
+            .yearEngine {
+                display: flex;
+                gap: 5px;
+
+                p {
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+    
+        .cardFooter {
+            padding: 0 10px;
+            margin: 5px 0; 
+
+            p {
+                color: grey;
+
+                span {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}

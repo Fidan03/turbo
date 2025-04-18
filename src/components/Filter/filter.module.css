@@ -1,0 +1,195 @@
+.background {
+    background: #ebedf3;
+    font-family: 'Roboto', sans-serif;
+
+
+    .container {
+        width: 65%;
+        margin: auto;
+        padding: 30px 0;
+
+        .firstRaw {
+            display: flex;
+            justify-content: space-around;
+
+            .model, .marka, .city {
+                width: 235px;
+                height: 50px;
+                border: none;
+                border-radius: 10px;
+            }
+
+            .options {
+                border-radius: 10px;
+                width: 235px;
+                height: 50px;
+
+                .all {
+                    height: 50px;
+                    border-radius: 10px 0 0 10px;
+                    padding: 10px;
+                    border: 1px solid grey;
+                    background-color: white;
+                }
+
+                .new {
+                    height: 50px;
+                    padding: 10px;
+                    background-color: white;
+                    border: 1px solid grey;
+                }
+
+                .isUsed {
+                    height: 50px;
+                    border-radius: 0 10px 10px 0;
+                    padding: 10px;
+                    border: 1px solid grey;
+                    background-color: white;
+                }
+
+                .all:focus {
+                    background-color: red;
+                    color: white;
+                }
+
+                .new:focus {
+                    background-color: red;
+                    color: white;
+                }
+                .isUsed:focus {
+                    background-color: red;
+                    color: white;
+                }
+            }
+        }
+
+        .secondRaw {
+            margin: 20px;
+            display: flex;
+            justify-content: space-around;
+
+
+            .priceInputs {
+                width: 235px;
+                height: 50px;
+                display: flex;
+                flex-wrap: wrap;
+
+                .minPrice, .maxPrice {
+                    width: 40%;
+                    height: 50px;
+                    border: 1px solid grey;
+                }
+
+                .minPrice {
+                    border-radius: 10px 0 0 10px;
+                }
+
+                .maxPrice {
+                    border-radius: 0 10px 10px 0;
+                }
+            }
+
+            .options {
+                display: flex;
+                gap: 15px;
+                width: 235px;
+
+                .currency {
+                    height: 50px;
+                    border-radius: 10px;
+                }
+
+                .credit, .barter {
+                    height: 50px;
+                    border-radius: 10px;
+                    border: 1px solid grey;
+                }
+
+                .credit:focus {
+                    background-color: rgba(255, 0, 0, 0.25);
+                    border: 1px solid red;
+                    color: red;
+                }
+
+                .barter:focus {
+                    background-color: rgba(255, 0, 0, 0.25);
+                    border: 1px solid red;
+                    color: red;
+                }
+
+
+            }
+
+            .ban {
+                width: 235px;
+                height: 50px;
+                border: none;
+                border-radius: 10px;
+            }
+
+            .year {
+                width: 235px;
+                margin: 0 20px;
+
+                .minYear {
+                    width: 50%;
+                    height: 50px;
+                    border: 1px solid darkgrey;
+                    border-radius: 10px 0 0 10px;
+                }
+
+                .maxYear {
+                    width: 50%;
+                    height: 50px;
+                    border: 1px solid darkgrey;
+                    border-radius: 0 10px 10px 0;
+                }
+            }
+        }
+
+        .thirdRaw {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                span {
+                    color: blue;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    color: grey;
+                }
+
+                select {
+                    background: none;
+                    border: none;
+                    font-size: 15px;
+                    color: red;
+                }
+
+                .show {
+                    height: 50px;
+                    width: 180px;
+                    background-color: red;
+                    color: white;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+
+

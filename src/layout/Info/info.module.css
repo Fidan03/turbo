@@ -1,0 +1,35 @@
+.container {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    padding: 15px 300px;
+
+    .link {
+        display: flex;
+        gap: 10px;
+        color: darkgrey;
+    }
+
+    .connection {
+        display: flex;
+        gap: 15px;
+        color: darkgrey;
+
+        .support {
+            color: black;
+            display: flex;
+            gap: 5px;
+        }
+
+        .like {
+            display: flex;
+            gap: 5px;
+        }
+
+        .profile {
+            display: flex;
+            gap: 5px;
+        }
+    }
+}

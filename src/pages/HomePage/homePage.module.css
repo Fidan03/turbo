@@ -1,0 +1,27 @@
+.container {
+    font-family: 'Roboto', sans-serif;
+
+
+    .ads {
+
+        background-color: #f1f3f7;
+
+        h1 {
+            width: 65%;
+            padding: 20px 0;
+            margin: auto;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        max-width: 65%;
+        margin: auto;
+    }
+
+
+}
