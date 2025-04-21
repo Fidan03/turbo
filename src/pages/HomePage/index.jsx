@@ -9,7 +9,7 @@ import data from '../../data/mockData'
 
 const CardList = () => {
 
-  const [cards, setCards] = useState([...data]);
+  const [cards] = useState([...data]);
 
 
   
@@ -22,7 +22,7 @@ const CardList = () => {
         <h1>Elanlar</h1>
       </div>
 
-      <div className={styles.cards} onChange={(e) => setSelect(e.target.value)}>
+      <div className={styles.cards}>
         {cards.map((card) => (
           <Card 
           key={card.id}

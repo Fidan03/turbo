@@ -1,14 +1,17 @@
 import React from 'react'
 import styles from './card.module.css'
 import { CiHeart } from "react-icons/ci";
+import { useNavigate } from 'react-router';
 
 const Card = (props) => {
+
+    const navigate = useNavigate();
     
 
 
 
   return (
-    <div className={styles.card}>
+    <div className={styles.card} onClick={() => navigate('/card')}>
         <div className={styles.container}>
             <div className={styles.cardHeader}>
                 <div className={styles.img}>

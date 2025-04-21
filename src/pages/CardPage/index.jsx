@@ -4,10 +4,12 @@ import { CiFlag1 } from "react-icons/ci";
 import bmw from '../../assets/images/bmw.avif'
 import pp from '../../assets/images/pp.jpg'
 import logo from '../../assets/images/logo.png'
-
 import React from 'react'
+// import { useNavigate } from 'react-router';
 
 const CardPage = () => {
+    // const navigate = useNavigate;
+
   return (
     <div className={styles.cardPage}>
         <div className={styles.container}>
@@ -33,33 +35,49 @@ const CardPage = () => {
                     </div>
                 </div>
             </div>
+
+
             <div className={styles.cardMain}>
                 <div className={styles.carImg}>
                     <img src = {bmw} alt="Car Image" />
                 </div>
-                <div className={styles.contactInfo}>
-                    <p className={styles.price}>52000$</p> 
-                    <div className={styles.profile}>
-                        <div className={styles.sellerInfo}>
-                            <p className={styles.seller}></p>
-                            <p className={styles.city}></p>
-                        </div>
-                        <div className={styles.profileImg}>
-                            <img src={pp} alt="Profile Photo" />
-                        </div>
-                    </div>
-                    <button className={styles.call}>Call</button>
+            </div>
+            
+            <div className={styles.cardFooter}>
+                <div className={styles.characteristics}>
+                    <p>Şəhər</p>
+                    <p>Marka</p>
+                    <p>Model</p>
+                    <p>Buraxılış ili</p>
+                    <p>Rəng</p>
+                    <p>Mühərrik</p>
+                    <p>Yürüş</p>
+                </div>
+                <div className={styles.description}>
+                    <p>Bakı</p>
+                    <p>BMW</p>
+                    <p>X5</p>
+                    <p>2021</p>
+                    <p>Qara</p>
+                    <p>3.0L I6 Turbo</p>
+                    <p>35000</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div className={styles.contactInfo}>
+            <p className={styles.price}>52000$</p> 
+            <div className={styles.profile}>
+                <div className={styles.sellerInfo}>
+                    <p className={styles.seller}>Alı</p>
+                    <p className={styles.city}>Baku</p>
+                </div>
+                <div className={styles.profileImg}>
+                    <img src={pp} alt="Profile Photo" />
                 </div>
             </div>
-            <div className={styles.cardFooter}>
-                <p>Şəhər <span>Bakı</span></p>
-                <p>Marka <span>BMW</span></p>
-                <p>Model <span>X5</span></p>
-                <p>Buraxılış ili <span>2021</span></p>
-                <p>Rəng <span>Qara</span></p>
-                <p>Mühərrik <span>3.0L I6 Turbo</span></p>
-                <p>Yürüş <span>35000</span></p>
-            </div>
+            <button className={styles.call}>Call</button>
         </div>
     </div>
   )

@@ -5,8 +5,7 @@ import data from '../../data/mockData'
 
 const Filter = () => {
 
-  const [options, setOptions] = useState([...data]);
-  const [select, setSelect] = useState(data.brand);
+  const [options] = useState([...data]);
 
 
 
