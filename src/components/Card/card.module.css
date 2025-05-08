@@ -1,13 +1,13 @@
 
 .card {
     max-width: 65%;
-    margin: 20px auto;
+    margin: 20px 0;
     font-family: 'Roboto', sans-serif;
 
 
     .container {
         width: 230px;
-        height: 290px;
+        height: 350px;
         box-sizing: border-box;
         box-shadow: 0 17px 34px 0 rgba(44,39,56,0.04),0 8px 17px 0 rgba(44,39,56,0.02);
         cursor: pointer;
@@ -52,6 +52,7 @@
             .price {
                 font-size: 25px;
                 font-weight: 600;
+                margin: 0;
             }
 
             .modelBrand {
@@ -85,6 +86,18 @@
 
                 span {
                     margin: 0 5px;
+                }
+            }
+
+            .btn {
+                button {
+                    width: 100%;
+                    background-color: darkblue;
+                    color: white;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    margin: 10px 0;
+                    cursor: pointer;
                 }
             }
         }

@@ -1,14 +1,20 @@
 import React from 'react'
 import styles from './card.module.css'
 import { CiHeart } from "react-icons/ci";
+import { useDispatch } from 'react-redux';
+import { AddCart } from '../../redux/features/cartSlice';
+
+
+
+
 
 const Card = (props) => {
-    
 
 
+    const dispatch = useDispatch();
 
   return (
-    <div className={styles.card}>
+    <div className={styles.card} >
         <div className={styles.container}>
             <div className={styles.cardHeader}>
                 <div className={styles.img}>
@@ -35,7 +41,13 @@ const Card = (props) => {
                 Bakı,
                     <span className={styles.time}>bugün 14:58</span>
                 </p>
+
+                <div className={styles.btn}>
+                    <button onClick={()=>dispatch(AddCart(props.add))}>Add To Cart</button>
+                </div>
+
             </div>
+
         </div>
     </div>
 

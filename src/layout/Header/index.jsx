@@ -1,9 +1,19 @@
 import styles from './header.module.css'
-
+import { FaShoppingCart } from "react-icons/fa";
 import React from 'react'
 import { FaPlus } from "react-icons/fa6";
+import { useNavigate } from 'react-router';
+
 
 const Header = () => {
+
+  const navigate = useNavigate();
+
+  function click () {
+    navigate('/cart')
+  }
+
+
   return (
     <div className={styles.container}>
         <div className={styles.logoNav}>
@@ -22,6 +32,9 @@ const Header = () => {
                 <FaPlus />
             </div>
             <button className={styles.button}>Yeni elan</button>
+        </div>
+        <div className={styles.cart}>
+          <FaShoppingCart onClick={click()} style={{color:'white'}}/>
         </div>
     </div>
   )

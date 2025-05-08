@@ -16,6 +16,7 @@ const Filter = () => {
       <div className={styles.container}>
         <div className={styles.firstRaw}>
           <select name="model" className={styles.model}>
+            <option value="select">Seçin</option>
 
             {options.map(option => (
               <option value={option.id} onChange={(e) => setSelect(e.target.value)}>{option.brand}</option>
@@ -24,6 +25,8 @@ const Filter = () => {
           </select>
 
           <select name="marka" className={styles.marka}>
+          <option value="select">Seçin</option>
+
             {options.map(option => (
               <option value={option.id}>{option.model}</option>
             ))}

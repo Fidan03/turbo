@@ -3,6 +3,9 @@ import Filter from '../../components/Filter/index'
 import Card from '../../components/Card/index'
 import { useState } from 'react'
 import data from '../../data/mockData'
+import { useNavigate } from 'react-router';
+
+
 
 
 
@@ -11,6 +14,15 @@ const CardList = () => {
 
   const [cards, setCards] = useState([...data]);
 
+  const navigate = useNavigate();
+
+  function handleClick (id) {
+
+    navigate(`/card/${id}`)
+    
+  }
+
+  
 
   
   return (
@@ -33,6 +45,7 @@ const CardList = () => {
           year={card.year}
           engine={card.engine}
           mileage={card.mileage}
+          add={card}
           />
         ))} 
 
